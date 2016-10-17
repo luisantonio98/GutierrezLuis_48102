@@ -19,17 +19,16 @@ using namespace std;
 //Program Execution Begins Here
 int main(int argc, char** argv) {
     //Declare all Variables Here
-    float calburn=3.6;  //calories burned per minute
-    float mins;         //number of minutes
+    float calpmin=3.6f;    //calories burned per minute
+    float calburn;         //calories burned
     
     //Input or initialize values Here
     
     //Process/Calculations Here
-    mins=5;
-    while (mins<=30) {
-        mins+5;
-        cout<<calburn<<endl;
-        break;
+    
+    for(float minutes=5; minutes<=30;minutes+=5){
+        calburn=minutes*calpmin;
+        cout<<"In "<<minutes<<" minutes, you have burned "<<calburn<<" calories.\n";
     }
     
     //Output Located Here
