@@ -70,7 +70,7 @@ int  binSrch(int a[],int n,int val){
         }else{
             endRng=midPnt-1;
         }
-    }while(endRng>begRng);
+    }while(endRng>=begRng);
     return -1;
 }
 
